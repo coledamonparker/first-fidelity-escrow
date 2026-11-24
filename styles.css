@@ -1899,3 +1899,309 @@ a {
     width: 100%;
   }
 }
+
+
+/* ==========================================================================
+   Clean Individual Service Pages & Dedicated Open Escrow Page
+   ========================================================================== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.simple-service-page,
+.open-escrow-page {
+  background: radial-gradient(circle at 85% 15%, rgba(98, 198, 214, 0.12) 0%, transparent 45%),
+              radial-gradient(circle at 10% 80%, rgba(184, 155, 94, 0.1) 0%, transparent 50%),
+              var(--ffe-bg-warm);
+  padding: 3.25rem 0 5rem;
+  min-height: calc(100vh - 220px);
+}
+
+.simple-service-container,
+.narrow-form-container {
+  max-width: 780px;
+}
+
+.simple-service-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--ffe-teal-deep);
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.service-dropdown-nav select {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ffe-charcoal);
+  background-color: #FFFFFF;
+  border: 1.5px solid var(--ffe-border);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-xs);
+}
+
+.service-dropdown-nav select:focus {
+  outline: none;
+  border-color: var(--ffe-teal-deep);
+}
+
+.simple-service-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--ffe-border);
+  border-top: 5px solid var(--ffe-gold);
+  border-radius: var(--radius-lg);
+  padding: 2.75rem 2.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.simple-service-card h1 {
+  font-size: clamp(1.85rem, 3.6vw, 2.5rem);
+  font-weight: 800;
+  color: var(--ffe-charcoal);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-top: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.simple-service-summary {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.35rem;
+  color: var(--ffe-teal-deep);
+  line-height: 1.38;
+  margin-bottom: 1rem;
+}
+
+.simple-service-desc {
+  font-size: 1rem;
+  color: var(--ffe-text-muted);
+  margin-bottom: 2rem;
+}
+
+.simple-essentials-box {
+  background-color: var(--ffe-bg-warm);
+  border: 1px solid var(--ffe-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.65rem;
+  margin-bottom: 2rem;
+}
+
+.simple-essentials-box h2 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ffe-charcoal);
+  margin-bottom: 0.95rem;
+}
+
+.simple-essentials-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1.25rem;
+}
+
+.simple-essentials-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ffe-charcoal);
+}
+
+.simple-essentials-list li svg {
+  color: var(--ffe-teal-deep);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.simple-service-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding-top: 0.5rem;
+}
+
+.simple-cta-note {
+  font-size: 0.84rem;
+  color: var(--ffe-text-muted);
+}
+
+/* Dedicated Open Escrow Page Card */
+.open-page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.open-page-header h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  color: var(--ffe-charcoal);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.open-page-header p {
+  font-size: 1rem;
+  color: var(--ffe-text-muted);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.clean-order-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--ffe-border);
+  border-top: 5px solid var(--ffe-teal-deep);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.type-dropdown-banner {
+  background-color: var(--ffe-gold-soft);
+  border: 1px solid var(--ffe-gold-border);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.type-dropdown-banner label {
+  display: block;
+  font-size: 0.86rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ffe-gold-dark);
+  margin-bottom: 0.5rem;
+}
+
+.type-dropdown-banner select {
+  width: 100%;
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ffe-charcoal);
+  background-color: #FFFFFF;
+  border: 2px solid var(--ffe-gold);
+  border-radius: var(--radius-sm);
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-xs);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.type-dropdown-banner select:focus {
+  outline: none;
+  border-color: var(--ffe-teal-deep);
+  box-shadow: 0 0 0 3px rgba(98, 198, 214, 0.25);
+}
+
+.type-helper-text {
+  font-size: 0.86rem;
+  color: var(--ffe-text-muted);
+  margin-top: 0.55rem;
+}
+
+.clean-form-section {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--ffe-border);
+}
+
+.clean-form-section:first-of-type {
+  padding-top: 0.25rem;
+}
+
+.clean-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.15rem;
+}
+
+.clean-step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--ffe-teal-deep);
+  color: #FFFFFF;
+  font-size: 0.82rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.clean-section-title h3 {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--ffe-charcoal);
+}
+
+.clean-submit-area {
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.clean-submit-caption {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--ffe-text-muted);
+}
+
+.clean-submit-caption a {
+  color: var(--ffe-teal-deep);
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .simple-service-page,
+  .open-escrow-page {
+    padding: 2rem 0 3.5rem;
+  }
+
+  .simple-service-card,
+  .clean-order-card {
+    padding: 1.65rem 1.25rem;
+  }
+
+  .simple-essentials-list {
+    grid-template-columns: 1fr;
+  }
+
+  .simple-service-cta .btn {
+    width: 100%;
+  }
+
+  .service-dropdown-nav,
+  .service-dropdown-nav select {
+    width: 100%;
+  }
+}
