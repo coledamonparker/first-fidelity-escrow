@@ -147,15 +147,34 @@ a {
 }
 
 .brand-logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  gap: 0.75rem;
   flex-shrink: 0;
 }
 
-.nav-logo-img {
-  height: 54px;
-  width: auto;
+.brand-cube-icon {
+  height: 48px;
+  width: 48px;
   object-fit: contain;
+  flex-shrink: 0;
+}
+
+.brand-wordmark {
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--ffe-charcoal);
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.brand-wordmark strong {
+  font-weight: 800;
+}
+
+.brand-logo-footer .brand-wordmark {
+  color: #FFFFFF;
 }
 
 .main-nav {
@@ -1239,8 +1258,13 @@ a {
     height: 70px;
   }
 
-  .nav-logo-img {
-    height: 44px;
+  .brand-cube-icon {
+    height: 38px;
+    width: 38px;
+  }
+
+  .brand-wordmark {
+    font-size: 1rem;
   }
 
   .header-actions .btn-primary {
