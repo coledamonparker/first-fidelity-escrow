@@ -35,7 +35,7 @@
   <!-- Sticky Glass Header with Mobile Drawer -->
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a href="#top" class="brand-logo" aria-label="First Fidelity Escrow Home">
+      <a href="index.html" class="brand-logo" aria-label="First Fidelity Escrow Home">
         <img src="images/favicon.png" alt="First Fidelity Escrow Icon" class="brand-cube-icon" />
         <span class="brand-wordmark"><strong>FIRST FIDELITY</strong> ESCROW</span>
       </a>
@@ -45,7 +45,7 @@
         <a href="#about">About</a>
         <a href="#reviews">Reviews</a>
         <a href="#office">Office</a>
-        <a href="#contact">Contact</a>
+        <a href="#open-escrow">Open Escrow</a>
       </nav>
 
       <div class="header-actions">
@@ -53,7 +53,7 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span>(858) 724-2146</span>
         </a>
-        <a href="#contact" class="btn btn-primary">Open Escrow</a>
+        <a href="#open-escrow" class="btn btn-primary">Open Escrow</a>
 
         <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
           <span class="hamburger-bar"></span>
@@ -67,14 +67,18 @@
     <div class="mobile-drawer" id="mobileDrawer" hidden>
       <div class="container mobile-drawer-inner">
         <nav class="mobile-nav" aria-label="Mobile Navigation">
-          <a href="#services" class="mobile-link">Escrow Services</a>
+          <a href="residential-purchase.html" class="mobile-link">01. Residential Purchase &amp; Resale</a>
+          <a href="refinance-reverse.html" class="mobile-link">02. Refinance &amp; Reverse Mortgages</a>
+          <a href="commercial-construction.html" class="mobile-link">03. Commercial &amp; Construction</a>
+          <a href="1031-exchange.html" class="mobile-link">04. 1031 Tax-Deferred Exchanges</a>
+          <a href="fsbo.html" class="mobile-link">05. For Sale By Owner (FSBO)</a>
+          <a href="short-sales-carryback.html" class="mobile-link">06. Short Sales &amp; Seller Carry-Backs</a>
           <a href="#about" class="mobile-link">About Melissa &amp; Team</a>
           <a href="#reviews" class="mobile-link">5.0★ Google Reviews</a>
-          <a href="#office" class="mobile-link">San Diego Office</a>
-          <a href="#contact" class="mobile-link">Contact &amp; Open Escrow</a>
+          <a href="#open-escrow" class="mobile-link">Open an Escrow Order</a>
         </nav>
         <div class="mobile-drawer-cta">
-          <a href="#contact" class="btn btn-primary btn-block mobile-link">Open an Escrow</a>
+          <a href="#open-escrow" class="btn btn-primary btn-block mobile-link">Open an Escrow Order</a>
           <a href="tel:8587242146" class="btn btn-outline btn-block">Call (858) 724-2146</a>
         </div>
         <p class="mobile-drawer-meta">
@@ -105,11 +109,11 @@
         </p>
 
         <div class="hero-cta-group">
-          <a href="#contact" class="btn btn-primary btn-lg">
-            <span>Open an Escrow</span>
+          <a href="#open-escrow" class="btn btn-primary btn-lg">
+            <span>Open an Escrow Order</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
-          <a href="tel:8587242146" class="btn btn-outline btn-lg">(858) 724-2146</a>
+          <a href="#services" class="btn btn-outline btn-lg">Explore Escrow Types</a>
         </div>
 
         <div class="pillars-row" aria-label="Core Values">
@@ -166,68 +170,104 @@
         <span>DFPI Licensed (#9632697)</span>
       </div>
       <div class="metric-item">
-        <strong>All Transactions</strong>
-        <span>Resale, Refi, 1031, Commercial &amp; FSBO</span>
+        <strong>Online Order Desk</strong>
+        <span>Direct Intake to orders@ffescrow.com</span>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
+  <!-- Services Section (Links to Individual Pages + Direct Order Buttons) -->
   <section id="services" class="section services-section">
     <div class="container">
       <div class="section-heading">
         <span class="eyebrow">Comprehensive Escrow Services</span>
-        <h2>Precision Closings for Every Transaction</h2>
-        <p>Full compliance with Federal, State, and Local Fiduciary and Escrow Laws paired with clear, proactive communication at every milestone.</p>
+        <h2>Select Your Transaction Type</h2>
+        <p>Explore our dedicated service guides and required closing checklists for each transaction type, or open an online escrow order directly below.</p>
       </div>
 
       <div class="services-grid">
         <article class="service-card">
-          <div class="service-icon-wrap">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <div class="service-card-top">
+            <span class="service-num-badge">01</span>
+            <div class="service-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
           </div>
-          <h3>Residential Purchase &amp; Resale</h3>
-          <p>Seamless, on-time closings for home buyers, sellers, and top-producing real estate agents across San Diego and California.</p>
+          <h3><a href="residential-purchase.html">Residential Purchase &amp; Resale</a></h3>
+          <p>Smooth, accurate closings for home buyers, sellers, and top-producing real estate agents across San Diego and California.</p>
+          <div class="service-card-actions">
+            <a href="residential-purchase.html" class="service-link">View Requirements &amp; Open Order &rarr;</a>
+          </div>
         </article>
 
         <article class="service-card">
-          <div class="service-icon-wrap">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          <div class="service-card-top">
+            <span class="service-num-badge">02</span>
+            <div class="service-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            </div>
           </div>
-          <h3>Refinance &amp; Reverse Mortgages</h3>
+          <h3><a href="refinance-reverse.html">Refinance &amp; Reverse Mortgages</a></h3>
           <p>High-volume, accurate loan closing coordination trusted by top mortgage lenders, loan officers, and homeowners.</p>
+          <div class="service-card-actions">
+            <a href="refinance-reverse.html" class="service-link">View Requirements &amp; Open Order &rarr;</a>
+          </div>
         </article>
 
         <article class="service-card">
-          <div class="service-icon-wrap">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="6" x2="15" y2="6"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
+          <div class="service-card-top">
+            <span class="service-num-badge">03</span>
+            <div class="service-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="6" x2="15" y2="6"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
+            </div>
           </div>
-          <h3>Commercial &amp; Construction</h3>
+          <h3><a href="commercial-construction.html">Commercial &amp; Construction</a></h3>
           <p>Dedicated escrow administration for commercial real estate acquisitions, construction disbursements, and complex deals.</p>
+          <div class="service-card-actions">
+            <a href="commercial-construction.html" class="service-link">View Requirements &amp; Open Order &rarr;</a>
+          </div>
         </article>
 
         <article class="service-card">
-          <div class="service-icon-wrap">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+          <div class="service-card-top">
+            <span class="service-num-badge">04</span>
+            <div class="service-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+            </div>
           </div>
-          <h3>1031 Tax-Deferred Exchanges</h3>
+          <h3><a href="1031-exchange.html">1031 Tax-Deferred Exchanges</a></h3>
           <p>Coordinated timelines with Qualified Intermediaries to protect tax-deferred proceeds and meet strict identification rules.</p>
+          <div class="service-card-actions">
+            <a href="1031-exchange.html" class="service-link">View Requirements &amp; Open Order &rarr;</a>
+          </div>
         </article>
 
         <article class="service-card">
-          <div class="service-icon-wrap">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+          <div class="service-card-top">
+            <span class="service-num-badge">05</span>
+            <div class="service-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+            </div>
           </div>
-          <h3>For Sale By Owner (FSBO)</h3>
+          <h3><a href="fsbo.html">For Sale By Owner (FSBO)</a></h3>
           <p>Patient, step-by-step guidance that makes the escrow process transparent, neutral, and easy to understand for direct buyers and sellers.</p>
+          <div class="service-card-actions">
+            <a href="fsbo.html" class="service-link">View Requirements &amp; Open Order &rarr;</a>
+          </div>
         </article>
 
         <article class="service-card">
-          <div class="service-icon-wrap">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          <div class="service-card-top">
+            <span class="service-num-badge">06</span>
+            <div class="service-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
           </div>
-          <h3>Short Sales &amp; Seller Carry-Backs</h3>
+          <h3><a href="short-sales-carryback.html">Short Sales &amp; Seller Carry-Backs</a></h3>
           <p>Seasoned expertise navigating lender payoff approvals, short sale packages, and custom seller-financed carry-back structures.</p>
+          <div class="service-card-actions">
+            <a href="short-sales-carryback.html" class="service-link">View Requirements &amp; Open Order &rarr;</a>
+          </div>
         </article>
       </div>
     </div>
@@ -416,100 +456,46 @@
     </div>
   </section>
 
-  <!-- Contact Form & Office Details Section -->
-  <section id="contact" class="section contact-section">
-    <div class="container contact-grid">
-      <div class="contact-details">
-        <span class="eyebrow">Get in Touch</span>
-        <h2>Open an Escrow or Ask a Question</h2>
-        <p class="contact-intro">
-          Ready to open escrow on a new purchase, refinance, or 1031 exchange? Call our office directly or send a message using the form and an escrow officer will respond promptly.
-        </p>
+  <!-- Open Escrow Order Form & Contact Section -->
+  <section id="open-escrow" class="section contact-section">
+    <div class="container">
+      <!-- Dynamic Multi-Transaction Open Escrow Intake Widget -->
+      <div id="escrowOrderMount"></div>
 
-        <div class="contact-cards">
-          <div class="contact-card">
-            <div class="contact-card-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div>
-              <h3>Office Address</h3>
-              <p>Corporate Plaza Two<br />12636 High Bluff Dr. #400<br />San Diego, CA 92130</p>
-              <a href="https://www.google.com/maps/place/First+Fidelity+Escrow/@32.9476333,-117.2519938,15z/data=!3m1!4b1!4m6!3m5!1s0x80dc089fc832ee39:0xcc5b95352eee0476!8m2!3d32.9476157!4d-117.2417155!16s%2Fg%2F11b77f5hvq" target="_blank" rel="noopener noreferrer" class="text-link">Get Directions &rarr;</a>
-            </div>
+      <!-- Office Info Strip Below Form -->
+      <div class="contact-cards-row">
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
-
-          <div class="contact-card">
-            <div class="contact-card-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            <div>
-              <h3>Phone &amp; Fax</h3>
-              <p><strong>Phone:</strong> <a href="tel:8587242146">(858) 724-2146</a></p>
-              <p><strong>Fax:</strong> (858) 724-2146</p>
-              <p class="hours-inline">Mon–Fri: 9:00 AM – 5:00 PM</p>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-card-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <div>
-              <h3>Regulatory License</h3>
-              <p>Licensed by the California Department of Financial Protection and Innovation (Department of Business Oversight).</p>
-              <p><strong>License #9632697</strong></p>
-            </div>
+          <div>
+            <h3>Office Address</h3>
+            <p>Corporate Plaza Two &bull; 12636 High Bluff Dr. #400, San Diego, CA 92130</p>
+            <a href="https://www.google.com/maps/place/First+Fidelity+Escrow/@32.9476333,-117.2519938,15z/data=!3m1!4b1!4m6!3m5!1s0x80dc089fc832ee39:0xcc5b95352eee0476!8m2!3d32.9476157!4d-117.2417155!16s%2Fg%2F11b77f5hvq" target="_blank" rel="noopener noreferrer" class="text-link">Get Directions &rarr;</a>
           </div>
         </div>
-      </div>
 
-      <div class="form-panel">
-        <form id="contactForm" class="contact-form">
-          <h3>Send Us a Message</h3>
-          <p class="form-sub">Fill out the details below and we will get right back to you.</p>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Full Name *</label>
-              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Jane Doe" />
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" required autocomplete="email" placeholder="jane@example.com" />
-            </div>
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(858) 555-0199" />
-            </div>
-            <div class="form-group">
-              <label for="role">Your Role</label>
-              <select id="role" name="role">
-                <option value="Real Estate Agent / Broker">Real Estate Agent / Broker</option>
-                <option value="Mortgage Lender / Loan Officer">Mortgage Lender / Loan Officer</option>
-                <option value="Home Buyer">Buyer</option>
-                <option value="Home Seller / FSBO">Seller / FSBO</option>
-                <option value="Escrow Officer (Careers Inquiry)">Escrow Officer (Careers)</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
+          <div>
+            <h3>Phone, Fax &amp; Order Desk</h3>
+            <p><strong>Phone / Fax:</strong> <a href="tel:8587242146">(858) 724-2146</a> &bull; <strong>Orders:</strong> <a href="mailto:orders@ffescrow.com">orders@ffescrow.com</a></p>
+            <p class="hours-inline">Mon–Fri: 9:00 AM – 5:00 PM</p>
           </div>
+        </div>
 
-          <div class="form-group">
-            <label for="subject">Transaction Type / Subject *</label>
-            <input type="text" id="subject" name="subject" required placeholder="e.g. Purchase Escrow, Refinance, 1031 Exchange, or General Inquiry" />
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-
-          <div class="form-group">
-            <label for="message">Message / Property Address *</label>
-            <textarea id="message" name="message" rows="4" required placeholder="Include property address, target closing date, or any questions..."></textarea>
+          <div>
+            <h3>Regulatory License</h3>
+            <p>Licensed by the California Department of Financial Protection and Innovation (DBO).</p>
+            <p><strong>License #9632697</strong></p>
           </div>
-
-          <button type="submit" class="btn btn-primary btn-block btn-lg">Send Message</button>
-          <div id="formStatus" class="form-status" role="status" aria-live="polite" hidden></div>
-        </form>
+        </div>
       </div>
     </div>
   </section>
@@ -518,7 +504,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <a href="#top" class="brand-logo brand-logo-footer" aria-label="First Fidelity Escrow Home">
+        <a href="index.html" class="brand-logo brand-logo-footer" aria-label="First Fidelity Escrow Home">
           <img src="images/favicon.png" alt="First Fidelity Escrow Icon" class="brand-cube-icon" />
           <span class="brand-wordmark"><strong>FIRST FIDELITY</strong> ESCROW</span>
         </a>
@@ -541,13 +527,15 @@
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       <span>Call Office</span>
     </a>
-    <a href="#contact" class="mobile-action-btn mobile-action-primary">
+    <a href="#open-escrow" class="mobile-action-btn mobile-action-primary">
       <span>Open Escrow</span>
     </a>
   </div>
 
+  <script src="escrow-order.js"></script>
   <script>
-    // Mobile Menu Toggle
+    renderOrderWidget('escrowOrderMount', 'residential-purchase');
+
     const menuToggle = document.getElementById('menuToggle');
     const mobileDrawer = document.getElementById('mobileDrawer');
     const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -571,20 +559,6 @@
 
     mobileLinks.forEach(function (link) {
       link.addEventListener('click', closeMenu);
-    });
-
-    // Contact Form Submission
-    const form = document.getElementById('contactForm');
-    const statusBox = document.getElementById('formStatus');
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const data = new FormData(form);
-      const name = data.get('name');
-      const subject = data.get('subject');
-      statusBox.hidden = false;
-      statusBox.className = 'form-status success';
-      statusBox.innerHTML = '<strong>Thank you, ' + name + '!</strong> Your inquiry regarding <em>' + subject + '</em> has been received. For immediate assistance, please call our San Diego office at <a href="tel:8587242146">(858) 724-2146</a>.';
-      form.reset();
     });
   </script>
 </body>
