@@ -3,45 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>First Fidelity Escrow, Inc. | San Diego, CA — Trust • Fidelity • Neutrality • Security</title>
+  <title>First Fidelity Escrow, Inc. | San Diego, CA — Independent Escrow Services</title>
   <meta name="description" content="First Fidelity Escrow, Inc. in San Diego, CA (12636 High Bluff Dr. #400). Independent escrow company specializing in residential & commercial resale, refinance, 1031 exchanges, construction, short sales, and FSBO transactions. DFPI License #9632697." />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Top Info Bar -->
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <div class="topbar-left">
-        <span class="license-badge">CA DFPI License #9632697</span>
-        <span>12636 High Bluff Dr. #400, San Diego, CA 92130</span>
+  <!-- Subtle Top Utility Bar -->
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-left">
+        <span class="pill-license">CA DFPI License #9632697</span>
+        <span class="utility-address">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          12636 High Bluff Dr. #400, San Diego, CA 92130
+        </span>
       </div>
-      <div class="topbar-right">
-        <span>Mon–Fri: 9:00 AM – 5:00 PM</span>
-        <a href="tel:8587242146" class="topbar-phone">(858) 724-2146</a>
+      <div class="utility-right">
+        <span class="utility-hours">Mon–Fri: 9:00 AM – 5:00 PM</span>
+        <a href="tel:8587242146" class="utility-phone">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (858) 724-2146
+        </a>
       </div>
     </div>
   </div>
 
-  <!-- Header / Navigation -->
-  <header class="site-header">
+  <!-- Sticky Glass Header with Mobile Drawer -->
+  <header class="site-header" id="top">
     <div class="container header-inner">
-      <a href="#" class="brand-logo" aria-label="First Fidelity Escrow Home">
+      <a href="#top" class="brand-logo" aria-label="First Fidelity Escrow Home">
         <img src="images/logo.png" alt="First Fidelity Escrow — Trust • Fidelity • Neutrality • Security" class="nav-logo-img" />
       </a>
+
       <nav class="main-nav" aria-label="Primary Navigation">
         <a href="#services">Services</a>
-        <a href="#about">About Us</a>
+        <a href="#about">About</a>
         <a href="#reviews">Reviews</a>
-        <a href="#gallery">Office &amp; Photos</a>
-        <a href="#contact">Contact Us</a>
+        <a href="#office">Office</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <div class="header-cta">
-        <a href="tel:8587242146" class="btn btn-outline">(858) 724-2146</a>
+
+      <div class="header-actions">
+        <a href="tel:8587242146" class="btn btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>(858) 724-2146</span>
+        </a>
         <a href="#contact" class="btn btn-primary">Open Escrow</a>
+
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Slide-Down Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" hidden>
+      <div class="container mobile-drawer-inner">
+        <nav class="mobile-nav" aria-label="Mobile Navigation">
+          <a href="#services" class="mobile-link">Escrow Services</a>
+          <a href="#about" class="mobile-link">About Melissa &amp; Team</a>
+          <a href="#reviews" class="mobile-link">5.0★ Google Reviews</a>
+          <a href="#office" class="mobile-link">San Diego Office</a>
+          <a href="#contact" class="mobile-link">Contact &amp; Open Escrow</a>
+        </nav>
+        <div class="mobile-drawer-cta">
+          <a href="#contact" class="btn btn-primary btn-block mobile-link">Open an Escrow</a>
+          <a href="tel:8587242146" class="btn btn-outline btn-block">Call (858) 724-2146</a>
+        </div>
+        <p class="mobile-drawer-meta">
+          12636 High Bluff Dr. #400, San Diego, CA 92130 &bull; DFPI License #9632697
+        </p>
       </div>
     </div>
   </header>
@@ -50,34 +87,86 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-content">
-        <div class="rating-badge">
-          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          <strong>5.0 Rating</strong>
-          <span class="rating-sub">&bull; San Diego's Premier Independent Escrow Company</span>
+        <div class="trust-badge">
+          <span class="stars" aria-label="5.0 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <strong>5.0 Google Rating</strong>
+          <span class="dot">&bull;</span>
+          <span>Carmel Valley / Del Mar Heights</span>
         </div>
-        <h1>FIRST FIDELITY ESCROW</h1>
-        <div class="tagline-bar">
-          <span>Trust &bull; Fidelity &bull; Neutrality &bull; Security</span>
-        </div>
+
+        <h1>
+          Independent Escrow Built on
+          <span class="serif-highlight">Trust, Fidelity &amp; Security.</span>
+        </h1>
+
         <p class="hero-lead">
-          First Fidelity Escrow offers a comprehensive variety of real estate escrow services, including residential and commercial resale and refinance, short sale expertise, seller carry-back escrows, 1031 exchanges, construction, reverse mortgages, and For Sale By Owner (FSBO) transactions.
+          First Fidelity Escrow delivers meticulous, responsive real estate closings across California — from residential purchases, refinances, and 1031 exchanges to commercial, construction, and For Sale By Owner transactions.
         </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary btn-lg">Open an Escrow / Contact Us</a>
-          <a href="tel:8587242146" class="btn btn-goldOutline btn-lg">Call (858) 724-2146</a>
+
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <span>Open an Escrow</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="tel:8587242146" class="btn btn-outline btn-lg">(858) 724-2146</a>
+        </div>
+
+        <div class="pillars-row" aria-label="Core Values">
+          <div class="pillar-item">
+            <span class="pillar-dot"></span>
+            <span>Trust</span>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-dot"></span>
+            <span>Fidelity</span>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-dot"></span>
+            <span>Neutrality</span>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-dot"></span>
+            <span>Security</span>
+          </div>
         </div>
       </div>
 
       <div class="hero-visual">
-        <div class="hero-image-frame">
-          <img src="images/hero-signing.jpg" alt="Real estate escrow closing and contract review at First Fidelity Escrow" />
-          <div class="hero-teal-card">
-            <p>
-              “The secret to success is to treat all customers as if your world revolves around them.”
-            </p>
-            <span>Independent &amp; Licensed Since 2014 &bull; License #9632697</span>
+        <div class="hero-card-stack">
+          <div class="hero-img-box">
+            <img src="images/hero-signing.jpg" alt="Contract signing and real estate escrow closing at First Fidelity Escrow" />
+          </div>
+          <div class="hero-floating-quote">
+            <div class="quote-accent-bar"></div>
+            <p>“The secret to success is to treat all customers as if your world revolves around them.”</p>
+            <div class="quote-footer">
+              <span>Founded 2014 &bull; 20+ Years Experience</span>
+              <strong>License #9632697</strong>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Metrics Strip -->
+  <section class="metrics-strip" aria-label="Company Highlights">
+    <div class="container metrics-grid">
+      <div class="metric-item">
+        <strong>20+ Years</strong>
+        <span>Senior Escrow Leadership</span>
+      </div>
+      <div class="metric-item">
+        <strong>5.0 &#9733;&#9733;&#9733;&#9733;&#9733;</strong>
+        <span>Verified Google Maps Rating</span>
+      </div>
+      <div class="metric-item">
+        <strong>100% Independent</strong>
+        <span>DFPI Licensed (#9632697)</span>
+      </div>
+      <div class="metric-item">
+        <strong>All Transactions</strong>
+        <span>Resale, Refi, 1031, Commercial &amp; FSBO</span>
       </div>
     </div>
   </section>
@@ -85,43 +174,60 @@
   <!-- Services Section -->
   <section id="services" class="section services-section">
     <div class="container">
-      <div class="section-header">
-        <span class="eyebrow">COMPREHENSIVE ESCROW SERVICES</span>
-        <h2>TAILORED CLOSINGS FOR EVERY TRANSACTION</h2>
-        <p>Strict adherence to all Federal, State, and Local Fiduciary and Escrow Laws with proactive communication from opening to close.</p>
+      <div class="section-heading">
+        <span class="eyebrow">Comprehensive Escrow Services</span>
+        <h2>Precision Closings for Every Transaction</h2>
+        <p>Full compliance with Federal, State, and Local Fiduciary and Escrow Laws paired with clear, proactive communication at every milestone.</p>
       </div>
 
       <div class="services-grid">
-        <div class="service-card">
-          <div class="service-accent">01</div>
+        <article class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
           <h3>Residential Purchase &amp; Resale</h3>
-          <p>Smooth, accurate closings for home buyers, sellers, and top-producing real estate agents across San Diego and California.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-accent">02</div>
+          <p>Seamless, on-time closings for home buyers, sellers, and top-producing real estate agents across San Diego and California.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          </div>
           <h3>Refinance &amp; Reverse Mortgages</h3>
-          <p>High-volume, detail-oriented loan closing coordination for mortgage lenders, brokers, and homeowners.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-accent">03</div>
-          <h3>Commercial &amp; Construction Escrows</h3>
-          <p>Specialized escrow management for commercial properties, new construction disbursements, and complex multi-party deals.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-accent">04</div>
+          <p>High-volume, accurate loan closing coordination trusted by top mortgage lenders, loan officers, and homeowners.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="6" x2="15" y2="6"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
+          </div>
+          <h3>Commercial &amp; Construction</h3>
+          <p>Dedicated escrow administration for commercial real estate acquisitions, construction disbursements, and complex deals.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+          </div>
           <h3>1031 Tax-Deferred Exchanges</h3>
-          <p>Seamless coordination with Qualified Intermediaries to ensure timely identification and closing compliance.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-accent">05</div>
+          <p>Coordinated timelines with Qualified Intermediaries to protect tax-deferred proceeds and meet strict identification rules.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+          </div>
           <h3>For Sale By Owner (FSBO)</h3>
-          <p>Step-by-step guidance that makes the escrow process clear, neutral, and easy to understand for independent buyers and sellers.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-accent">06</div>
+          <p>Patient, step-by-step guidance that makes the escrow process transparent, neutral, and easy to understand for direct buyers and sellers.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
           <h3>Short Sales &amp; Seller Carry-Backs</h3>
-          <p>Seasoned expertise navigating lender approvals, short sale packages, and custom seller-financed carry-back terms.</p>
-        </div>
+          <p>Seasoned expertise navigating lender payoff approvals, short sale packages, and custom seller-financed carry-back structures.</p>
+        </article>
       </div>
     </div>
   </section>
@@ -129,137 +235,143 @@
   <!-- About Us Section -->
   <section id="about" class="section about-section">
     <div class="container about-grid">
-      <div class="about-portrait-col">
-        <div class="portrait-card">
-          <img src="images/melissa-carson.jpg" alt="Melissa Carson — Founder &amp; Owner of First Fidelity Escrow" />
-          <div class="portrait-caption">
+      <div class="about-media">
+        <div class="profile-card">
+          <div class="profile-img-wrap">
+            <img src="images/melissa-carson.jpg" alt="Melissa Carson — Founder &amp; Owner of First Fidelity Escrow" loading="lazy" />
+          </div>
+          <div class="profile-info">
             <h3>Melissa Carson</h3>
-            <span>Founder, Owner &amp; Senior Escrow Officer</span>
+            <p>Founder, Owner &amp; Senior Escrow Officer</p>
+            <div class="profile-badges">
+              <span>SDSU B.S. Degree</span>
+              <span>CEA &amp; NSDCEA Member</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="about-content-col">
-        <span class="eyebrow">ABOUT FIRST FIDELITY ESCROW</span>
-        <h2>OVER 20 YEARS OF ESCROW EXCELLENCE</h2>
+      <div class="about-copy">
+        <span class="eyebrow">About First Fidelity Escrow</span>
+        <h2>Over Two Decades of Trusted Escrow Leadership</h2>
         <p>
-          <strong>First Fidelity Escrow</strong> is an independent escrow company founded in 2014 by <strong>Melissa Carson</strong>. Melissa has over 20 years of escrow experience and works with many of the top-producing real estate agents and lenders in the nation.
+          <strong>First Fidelity Escrow</strong> is an independent escrow company founded in 2014 by <strong>Melissa Carson</strong>. With more than 20 years of escrow experience, Melissa partners with many of the highest-producing real estate agents and mortgage lenders in the nation.
         </p>
         <p>
-          She holds a Bachelor of Science Degree from San Diego State University, is an active member of the <strong>California Escrow Association</strong> and the <strong>North San Diego County Escrow Association</strong>, and served on the North San Diego County Escrow Association Board of Directors.
+          A graduate of San Diego State University (B.S.), Melissa is an active member of the <strong>California Escrow Association</strong> and the <strong>North San Diego County Escrow Association</strong>, where she also served on the Board of Directors. Her commitment to continuing education ensures every file strictly adheres to Federal, State, and Local Fiduciary and Escrow Laws.
         </p>
         <p>
-          Supported by our dedicated escrow team — including Senior Escrow Officer <strong>Nina Latham</strong> and <strong>Darianne Brewer</strong> — First Fidelity Escrow prides itself on exceeding the expectations of real estate agents, lenders, buyers, and sellers on every transaction.
+          Alongside Senior Escrow Officer <strong>Nina Latham</strong> and <strong>Darianne Brewer</strong>, our team treats every client like family — answering questions promptly, verifying every detail, and ensuring smooth, stress-free closings.
         </p>
-        <blockquote class="owner-quote">
-          “As the owner, I personally welcome you to bring all of your escrow needs. I assure you that your transaction will be handled with the professionalism it deserves.”
+
+        <blockquote class="founder-quote">
+          <p>“As the owner, I personally welcome you to bring all of your escrow needs. I assure you that your transaction will be handled with the professionalism it deserves.”</p>
           <cite>— Melissa Carson, Founder &amp; Owner</cite>
         </blockquote>
       </div>
     </div>
   </section>
 
-  <!-- Google Reviews & Client Testimonials Section -->
+  <!-- Google Reviews & Testimonials Section -->
   <section id="reviews" class="section reviews-section">
     <div class="container">
-      <div class="reviews-header-bar">
-        <div>
-          <span class="eyebrow">VERIFIED CLIENT FEEDBACK</span>
-          <h2>GOOGLE REVIEWS &amp; TESTIMONIALS</h2>
+      <div class="reviews-top">
+        <div class="reviews-title-group">
+          <span class="eyebrow">Client Reviews</span>
+          <h2>5.0-Star Rated by Buyers, Sellers, Agents &amp; Lenders</h2>
         </div>
-        <div class="google-rating-box">
-          <div class="rating-score">5.0</div>
-          <div class="rating-meta">
+        <div class="google-badge-card">
+          <div class="google-score">5.0</div>
+          <div class="google-score-meta">
             <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <span>5.0 out of 5 Stars on Google Maps</span>
+            <span>Verified Google Maps Reviews</span>
           </div>
-          <a href="https://www.google.com/maps/place/First+Fidelity+Escrow/@32.9476333,-117.2519938,15z/data=!3m1!4b1!4m6!3m5!1s0x80dc089fc832ee39:0xcc5b95352eee0476!8m2!3d32.9476157!4d-117.2417155!16s%2Fg%2F11b77f5hvq" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm">View on Google Maps &rarr;</a>
+          <a href="https://www.google.com/maps/place/First+Fidelity+Escrow/@32.9476333,-117.2519938,15z/data=!3m1!4b1!4m6!3m5!1s0x80dc089fc832ee39:0xcc5b95352eee0476!8m2!3d32.9476157!4d-117.2417155!16s%2Fg%2F11b77f5hvq" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-light">Google Maps &rarr;</a>
         </div>
       </div>
 
       <div class="reviews-grid">
         <article class="review-card">
-          <div class="review-header">
-            <div class="avatar">DD</div>
+          <div class="review-meta">
+            <div class="reviewer-avatar">DD</div>
             <div>
               <h3>Debbie Dykstra</h3>
               <span>Local Guide &bull; Google Review</span>
             </div>
-            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           </div>
-          <p class="review-body">
-            "Darianne Brewer and Nina Latham made my selling experience so easy. Nina called me to explain everything about Escrow and what I needed to do, and gave me all the information to make a smooth transaction. The day I went in to sign my paperwork, I met with Nina and it was like meeting with an old friend. So friendly, professional, she explained everything. I highly recommend First Fidelity Escrow."
+          <p class="review-text">
+            “Darianne Brewer and Nina Latham made my selling experience so easy. Nina called me to explain everything about Escrow and what I needed to do. The day I went in to sign my paperwork, I met with Nina and it was like meeting with an old friend. With all the stress of selling and moving, they make everything so easy.”
           </p>
         </article>
 
         <article class="review-card">
-          <div class="review-header">
-            <div class="avatar">SD</div>
-            <div>
-              <h3>Shawn Davis</h3>
-              <span>Local Guide &bull; Google Review</span>
-            </div>
-            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          </div>
-          <p class="review-body">
-            "Melissa and First Fidelity were great to work with. My escrow was difficult due to the buyer and their agent, but Melissa walked me through what escrow does and doesn't do. She is very quick to reply and answers questions very professionally. If I sell another house, I would use this company again."
-          </p>
-        </article>
-
-        <article class="review-card">
-          <div class="review-header">
-            <div class="avatar">ED</div>
+          <div class="review-meta">
+            <div class="reviewer-avatar">ED</div>
             <div>
               <h3>Eric D</h3>
               <span>Local Guide &bull; Google Review</span>
             </div>
-            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           </div>
-          <p class="review-body">
-            "Outstanding Escrow Service - Best in the Business! Working with Nina is hands down the best experience I’ve ever had with a title and escrow company. Nina is an absolute professional—her attention to detail and dedication to getting everything right is truly unmatched. If you’re looking for an escrow company that combines expertise, meticulousness, and a personal touch, Nina and her team are the ones to trust."
+          <p class="review-text">
+            “Outstanding Escrow Service — Best in the Business! Working with Nina is hands down the best experience I’ve ever had with a title and escrow company. Her attention to detail and dedication to getting everything right is truly unmatched. She genuinely cares about her clients and the process.”
           </p>
         </article>
 
         <article class="review-card">
-          <div class="review-header">
-            <div class="avatar">PP</div>
+          <div class="review-meta">
+            <div class="reviewer-avatar">SD</div>
+            <div>
+              <h3>Shawn Davis</h3>
+              <span>Local Guide &bull; Google Review</span>
+            </div>
+            <div class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+          <p class="review-text">
+            “Melissa and First Fidelity were great to work with. My escrow was difficult due to the buyer and their agent, but Melissa walked me through what escrow does and doesn't do. She is very quick to reply and answers questions very professionally. I would use this company again.”
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-meta">
+            <div class="reviewer-avatar">PP</div>
             <div>
               <h3>Pauline Presson</h3>
-              <span>Verified Seller &bull; Google Review</span>
+              <span>Home Seller &bull; Google Review</span>
             </div>
-            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           </div>
-          <p class="review-body">
-            "Nina Latham was the best escrow officer I’ve ever had. She explained how the process works better than anyone ever has. She took the time to check every detail and really seemed to care about me as a person. I was the seller this time and I learned that she was just as helpful to the buyer and probably helped escrow close on time."
+          <p class="review-text">
+            “Nina Latham was the best escrow officer I’ve ever had. She explained how the process works better than anyone ever has. She took the time to check every detail and really seemed to care about me as a person. She was just as helpful to the buyer and helped escrow close on time.”
           </p>
         </article>
 
         <article class="review-card">
-          <div class="review-header">
-            <div class="avatar">BN</div>
+          <div class="review-meta">
+            <div class="reviewer-avatar">BN</div>
             <div>
               <h3>Brandon Nguyen</h3>
-              <span>Verified Buyer &bull; Google Review</span>
+              <span>Home Buyer &bull; Google Review</span>
             </div>
-            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           </div>
-          <p class="review-body">
-            "Nina Latham is the best of the best escrow officer. She took the time to check every detail and explained how the process works. It feels like family member. I am the buyer."
+          <p class="review-text">
+            “Nina Latham is the best of the best escrow officer. She took the time to check every detail and explained how the process works. It feels like family. I am the buyer.”
           </p>
         </article>
 
         <article class="review-card">
-          <div class="review-header">
-            <div class="avatar">NV</div>
+          <div class="review-meta">
+            <div class="reviewer-avatar">NV</div>
             <div>
               <h3>Nick V. &amp; Dane B.</h3>
-              <span>Lender &amp; FSBO Client Testimonials</span>
+              <span>Top Producing Lender &amp; FSBO Seller</span>
             </div>
-            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           </div>
-          <p class="review-body">
-            "First Fidelity Escrow is the most responsive and actionable escrow company I have ever dealt with. As one of the Top Producing Lenders in the Nation, I know the value of a good escrow officer that facilitates a high volume of accurate loan closings." — <strong>Nick V.</strong><br /><br />
-            "Melissa walked me through the entire process of my For Sale By Owner and made the escrow experience easy to understand." — <strong>Dane B.</strong>
+          <p class="review-text">
+            “First Fidelity Escrow is the most responsive and actionable escrow company I have ever dealt with. As one of the Top Producing Lenders in the Nation, I know the value of a good escrow officer that facilitates a high volume of accurate loan closings.” — <strong>Nick V.</strong>
           </p>
         </article>
       </div>
@@ -267,26 +379,37 @@
   </section>
 
   <!-- Office & Google Maps Photos Section -->
-  <section id="gallery" class="section gallery-section">
+  <section id="office" class="section office-section">
     <div class="container">
-      <div class="section-header">
-        <span class="eyebrow">CARMEL VALLEY / DEL MAR HEIGHTS OFFICE</span>
-        <h2>OUR SAN DIEGO OFFICE</h2>
-        <p>Located at Corporate Plaza Two — 12636 High Bluff Dr. #400, San Diego, CA 92130.</p>
+      <div class="section-heading">
+        <span class="eyebrow">San Diego Office</span>
+        <h2>Corporate Plaza Two &bull; Suite 400</h2>
+        <p>Conveniently located off I-5 at 12636 High Bluff Dr. #400 in Carmel Valley / Del Mar Heights with wheelchair-accessible parking and entrance.</p>
       </div>
 
-      <div class="gallery-grid">
-        <figure class="gallery-item">
-          <img src="images/reception.jpg" alt="First Fidelity Escrow Suite 400 reception and conference room in San Diego" loading="lazy" />
-          <figcaption>Suite 400 Reception &amp; Closing Conference Room</figcaption>
+      <div class="office-gallery">
+        <figure class="office-photo office-photo-featured">
+          <img src="images/reception.jpg" alt="First Fidelity Escrow Suite 400 reception and conference room" loading="lazy" />
+          <figcaption>
+            <strong>Suite 400 Reception &amp; Closing Conference Room</strong>
+            <span>12636 High Bluff Dr. #400, San Diego, CA 92130</span>
+          </figcaption>
         </figure>
-        <figure class="gallery-item">
-          <img src="images/building-12636.jpg" alt="12636 High Bluff Dr exterior signage in San Diego (Google Maps)" loading="lazy" />
-          <figcaption>12636 High Bluff Dr — Corporate Plaza Two Exterior (Google Maps)</figcaption>
+
+        <figure class="office-photo">
+          <img src="images/building-12636.jpg" alt="12636 High Bluff Dr Corporate Plaza Two building exterior from Google Maps" loading="lazy" />
+          <figcaption>
+            <strong>12636 High Bluff Dr Exterior</strong>
+            <span>Corporate Plaza Two (Google Maps)</span>
+          </figcaption>
         </figure>
-        <figure class="gallery-item">
-          <img src="images/plaza-courtyard.jpg" alt="Corporate Plaza Two courtyard and entrance on High Bluff Dr (Google Maps review photo)" loading="lazy" />
-          <figcaption>Corporate Plaza Two Courtyard &amp; Entrance (Google Maps Photo)</figcaption>
+
+        <figure class="office-photo">
+          <img src="images/plaza-courtyard.jpg" alt="Corporate Plaza Two landscaped courtyard and entrance from Google Maps" loading="lazy" />
+          <figcaption>
+            <strong>Corporate Plaza Two Courtyard</strong>
+            <span>Outdoor Plaza &amp; Entryway (Google Maps)</span>
+          </figcaption>
         </figure>
       </div>
     </div>
@@ -295,77 +418,92 @@
   <!-- Contact Form & Office Details Section -->
   <section id="contact" class="section contact-section">
     <div class="container contact-grid">
-      <div class="contact-info">
-        <span class="eyebrow">CONTACT FIRST FIDELITY ESCROW</span>
-        <h2>OPEN AN ESCROW OR SEND A MESSAGE</h2>
-        <p class="contact-lead">
-          Whether you are an agent, lender, buyer, or seller, our team is ready to assist with your transaction. Reach out by phone or send us a message below.
+      <div class="contact-details">
+        <span class="eyebrow">Get in Touch</span>
+        <h2>Open an Escrow or Ask a Question</h2>
+        <p class="contact-intro">
+          Ready to open escrow on a new purchase, refinance, or 1031 exchange? Call our office directly or send a message using the form and an escrow officer will respond promptly.
         </p>
 
-        <div class="info-list">
-          <div class="info-item">
-            <h3>Office Location</h3>
-            <p><strong>Corporate Plaza Two</strong><br />12636 High Bluff Dr. #400<br />San Diego, CA 92130</p>
-            <a href="https://www.google.com/maps/place/First+Fidelity+Escrow/@32.9476333,-117.2519938,15z/data=!3m1!4b1!4m6!3m5!1s0x80dc089fc832ee39:0xcc5b95352eee0476!8m2!3d32.9476157!4d-117.2417155!16s%2Fg%2F11b77f5hvq" target="_blank" rel="noopener noreferrer" class="map-link">Get Directions on Google Maps &rarr;</a>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h3>Office Address</h3>
+              <p>Corporate Plaza Two<br />12636 High Bluff Dr. #400<br />San Diego, CA 92130</p>
+              <a href="https://www.google.com/maps/place/First+Fidelity+Escrow/@32.9476333,-117.2519938,15z/data=!3m1!4b1!4m6!3m5!1s0x80dc089fc832ee39:0xcc5b95352eee0476!8m2!3d32.9476157!4d-117.2417155!16s%2Fg%2F11b77f5hvq" target="_blank" rel="noopener noreferrer" class="text-link">Get Directions &rarr;</a>
+            </div>
           </div>
 
-          <div class="info-item">
-            <h3>Telephone &amp; Fax</h3>
-            <p><strong>Phone:</strong> <a href="tel:8587242146">(858) 724-2146</a></p>
-            <p><strong>Fax:</strong> (858) 724-2146</p>
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <h3>Phone &amp; Fax</h3>
+              <p><strong>Phone:</strong> <a href="tel:8587242146">(858) 724-2146</a></p>
+              <p><strong>Fax:</strong> (858) 724-2146</p>
+              <p class="hours-inline">Mon–Fri: 9:00 AM – 5:00 PM</p>
+            </div>
           </div>
 
-          <div class="info-item">
-            <h3>Office Hours &amp; Licensing</h3>
-            <p><strong>Monday – Friday:</strong> 9:00 AM – 5:00 PM</p>
-            <p><strong>Saturday – Sunday:</strong> Closed</p>
-            <p class="license-note">Licensed by the California Department of Financial Protection and Innovation (Department of Business Oversight) &bull; <strong>License #9632697</strong></p>
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h3>Regulatory License</h3>
+              <p>Licensed by the California Department of Financial Protection and Innovation (Department of Business Oversight).</p>
+              <p><strong>License #9632697</strong></p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="contact-form-card">
+      <div class="form-panel">
         <form id="contactForm" class="contact-form">
-          <h3>Contact Us</h3>
-          <p class="form-subtitle">Complete the form below and an escrow officer will respond promptly.</p>
+          <h3>Send Us a Message</h3>
+          <p class="form-sub">Fill out the details below and we will get right back to you.</p>
 
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Your Name *</label>
-              <input type="text" id="name" name="name" required placeholder="Jane Doe" />
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Jane Doe" />
             </div>
             <div class="form-group">
-              <label for="email">Your Email *</label>
-              <input type="email" id="email" name="email" required placeholder="jane@example.com" />
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="jane@example.com" />
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group">
               <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="(858) 555-0199" />
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(858) 555-0199" />
             </div>
             <div class="form-group">
-              <label for="role">I Am a...</label>
+              <label for="role">Your Role</label>
               <select id="role" name="role">
                 <option value="Real Estate Agent / Broker">Real Estate Agent / Broker</option>
                 <option value="Mortgage Lender / Loan Officer">Mortgage Lender / Loan Officer</option>
                 <option value="Home Buyer">Buyer</option>
                 <option value="Home Seller / FSBO">Seller / FSBO</option>
-                <option value="Escrow Officer (Careers Inquiry)">Escrow Officer (Careers Inquiry)</option>
+                <option value="Escrow Officer (Careers Inquiry)">Escrow Officer (Careers)</option>
                 <option value="Other">Other</option>
               </select>
             </div>
           </div>
 
           <div class="form-group">
-            <label for="subject">Subject / Transaction Type *</label>
-            <input type="text" id="subject" name="subject" required placeholder="e.g. New Purchase Escrow, Refinance, 1031 Exchange, or General Question" />
+            <label for="subject">Transaction Type / Subject *</label>
+            <input type="text" id="subject" name="subject" required placeholder="e.g. Purchase Escrow, Refinance, 1031 Exchange, or General Inquiry" />
           </div>
 
           <div class="form-group">
-            <label for="message">Your Message *</label>
-            <textarea id="message" name="message" rows="4" required placeholder="Include property address or any questions for our escrow team..."></textarea>
+            <label for="message">Message / Property Address *</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Include property address, target closing date, or any questions..."></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary btn-block btn-lg">Send Message</button>
@@ -379,22 +517,61 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <div class="footer-logo-pill">
+        <div class="footer-logo-card">
           <img src="images/logo.png" alt="First Fidelity Escrow Logo" />
         </div>
-        <div class="footer-text">
-          <p class="footer-tagline">TRUST &bull; FIDELITY &bull; NEUTRALITY &bull; SECURITY</p>
-          <p>12636 High Bluff Dr. #400, San Diego, CA 92130 &bull; <a href="tel:8587242146">(858) 724-2146</a></p>
+        <div>
+          <p class="footer-motto">TRUST &bull; FIDELITY &bull; NEUTRALITY &bull; SECURITY</p>
+          <p class="footer-contact">12636 High Bluff Dr. #400, San Diego, CA 92130 &bull; <a href="tel:8587242146">(858) 724-2146</a></p>
         </div>
       </div>
+
       <div class="footer-legal">
-        <p>Copyright &copy; 2026, First Fidelity Escrow, Inc. All Rights Reserved.</p>
-        <p>Licensed by the Department of Business Oversight. License #9632697.</p>
+        <p>&copy; 2026 First Fidelity Escrow, Inc. All Rights Reserved.</p>
+        <p>Licensed by the Department of Business Oversight &bull; License #9632697</p>
       </div>
     </div>
   </footer>
 
+  <!-- Sticky Mobile Bottom Action Bar -->
+  <div class="mobile-action-bar" aria-label="Quick Mobile Actions">
+    <a href="tel:8587242146" class="mobile-action-btn mobile-action-call">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Call Office</span>
+    </a>
+    <a href="#contact" class="mobile-action-btn mobile-action-primary">
+      <span>Open Escrow</span>
+    </a>
+  </div>
+
   <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function closeMenu() {
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.classList.remove('is-active');
+      mobileDrawer.hidden = true;
+    }
+
+    menuToggle.addEventListener('click', function () {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      if (expanded) {
+        closeMenu();
+      } else {
+        menuToggle.setAttribute('aria-expanded', 'true');
+        menuToggle.classList.add('is-active');
+        mobileDrawer.hidden = false;
+      }
+    });
+
+    mobileLinks.forEach(function (link) {
+      link.addEventListener('click', closeMenu);
+    });
+
+    // Contact Form Submission
     const form = document.getElementById('contactForm');
     const statusBox = document.getElementById('formStatus');
     form.addEventListener('submit', function (e) {
